@@ -2,8 +2,7 @@
 import './App.css'
 import Gallery from './horned-beasts/Gallery'
 
-function App() {
-  
+export default function App() {
 
   return (
     <>
@@ -11,5 +10,3 @@ function App() {
     </>
   )
 }
-
-export default App

@@ -1,27 +1,22 @@
 import beastData from "./DATA"
+import HornedBeast from "./HornedBeasts"
 
 export default function Gallery() {
-    console.log(props.beasts)
     return (
         <>
+        <h2>Horned Beasts 😎 🐉 </h2>
         {
             beastData.map((beast) => {
                 return (
-                    <HornedBeast/>
+                    <HornedBeast title={beast.title} img={beast.image_url} description={beast.description}/>
                 )
                 
             })
         }
     
-            <h2>Horned Beasts 😎 🐉 </h2>
-            {
-                props.beasts.map(beast => {
-                    return (
-                        <HornedBeast id={beast.id} title={beast.title} img={beast.image_url} description={beast.description} keyword={beast.keyword} horns={beast.horns}/>
-                    )
-                })
-            }
-            
         </>
     )
 }
+
+
+
